@@ -1,4 +1,4 @@
-use ansi_term::Colour::{Blue, Green};
+use ansi_term::Colour::{Blue, Green, Red};
 use std::fs::File;
 use std::io::{self, BufRead};
 use std::path::Path;
@@ -32,7 +32,7 @@ fn main() {
                 }
             }
         }
-        Err(error) => eprintln!("Oh no! : {}", error),
+        Err(error) => eprintln!("Oh no! : {}", Red.bold().paint(&error.to_string())),
     }
 }
 
