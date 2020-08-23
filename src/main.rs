@@ -17,10 +17,12 @@ fn main() {
     let result = read_lines(args.path);
     match result {
         Ok(lines) => {
+            let mut n = 0;
             for line in lines {
+                n += 1;
                 if let Ok(line) = line {
                     if line.contains(&args.pattern) {
-                        println!("{}", line);
+                        println!("{}. {}", n, line);
                     }
                 }
             }
