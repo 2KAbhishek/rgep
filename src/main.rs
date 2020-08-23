@@ -1,3 +1,4 @@
+use ansi_term::Colour::{Blue, Green};
 use std::fs::File;
 use std::io::{self, BufRead};
 use std::path::Path;
@@ -22,7 +23,11 @@ fn main() {
                 n += 1;
                 if let Ok(line) = line {
                     if line.contains(&args.pattern) {
-                        println!("{}. {}", n, line);
+                        println!(
+                            "[{}] {}",
+                            Green.bold().paint(&n.to_string()),
+                            Blue.bold().paint(&line)
+                        );
                     }
                 }
             }
