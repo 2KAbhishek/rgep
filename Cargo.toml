@@ -1,8 +1,15 @@
 [package]
 name = "rsgrep"
 version = "0.1.0"
-authors = ["Abhishek Keshri <keshri.abhishek63@gmail.com>"]
+authors = ["Abhishek Keshri <iam2kabhishek@gmail.com>"]
 edition = "2018"
+license = "GPL-2.0+"
+description = "A tool to search files for patterns"
+readme = "README.md"
+homepage = "https://github.com/2kabhishek/rsgrep"
+repository = "https://github.com/2kabhishek/rsgrep"
+keywords = ["cli", "search", "grep", "toy"]
+categories = ["command-line-utilities"]
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
