@@ -33,3 +33,5 @@ USAGE:
 ```
 
 ### More Info
+
+[Crates.io/rgep](https://crates.io/crates/rgep)
