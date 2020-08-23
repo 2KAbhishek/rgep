@@ -14,14 +14,18 @@ struct Cla {
 fn main() {
     let args = Cla::from_args();
 
-    if let Ok(lines) = read_lines(args.path) {
-        for line in lines {
-            if let Ok(line) = line {
-                if line.contains(&args.pattern) {
-                    println!("{}", line);
+    let result = read_lines(args.path);
+    match result {
+        Ok(lines) => {
+            for line in lines {
+                if let Ok(line) = line {
+                    if line.contains(&args.pattern) {
+                        println!("{}", line);
+                    }
                 }
             }
         }
+        Err(error) => println!("Oh no! : {}", error),
     }
 }
 
