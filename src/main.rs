@@ -27,7 +27,7 @@ fn main() {
                 }
             }
         }
-        Err(error) => println!("Oh no! : {}", error),
+        Err(error) => eprintln!("Oh no! : {}", error),
     }
 }
 
