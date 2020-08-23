@@ -8,41 +8,28 @@
 ![Contributors](https://img.shields.io/github/contributors/2kabhishek/rsgrep?style=plastic&color=f0f&label=Contributors)
 ![License](https://img.shields.io/github/license/2kabhishek/rsgrep?style=plastic&color=555&label=License)
 
-rsgrep is a `<utility/tool/feature>` that allows `<insert_target_audience>` to do `<action/task_it_does>`.
+rsgrep is a utility that allows you to search patterns in files.
 
 ## Prerequisites
 
 Before you begin, ensure you have met the following requirements:
 
-- You have installed the latest version of `<coding_language/dependency/requirement_1>`
+- You have installed the latest version of `cargo`
 
 ## Installing rsgrep
 
 To install rsgrep, follow these steps:
 
 ```bash
-git clone https://github.com/2kabhishek/rsgrep
-cd rsgrep
-<install_command>
+cargo install rsgrep
 ```
 
 ## Using rsgrep
 
 ```bash
 USAGE:
-    command [FLAGS] [OPTIONS]
-
-FLAGS:
-    -h, --help              Prints help information.
-
-OPTIONS:
-    -o, --option <value>    Option description. Options are: a, b. [default: a]
+    rsgrep pattern path
 
 ```
-### To-Do
-
-- [x] Setup repo
-- [ ] Think real hard
-- [ ] Start typing
 
 ### More Info
