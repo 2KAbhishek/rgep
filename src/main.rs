@@ -4,7 +4,7 @@ use std::io::{self, BufRead};
 use std::path::Path;
 use structopt::StructOpt;
 
-// Search fro pattern in path
+// Command line arguments struct
 #[derive(StructOpt)]
 struct Cla {
     pattern: String,
@@ -32,10 +32,12 @@ fn main() {
                 }
             }
         }
+        // Print to stderr
         Err(error) => eprintln!("Oh no! : {}", Red.bold().paint(&error.to_string())),
     }
 }
 
+// Get lines from file in BufReader
 fn read_lines<P>(filename: P) -> io::Result<io::Lines<io::BufReader<File>>>
 where
     P: AsRef<Path>,
